@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+sqlalchemy[asyncio]>=2.0.40
+asyncpg
+alembic
+pydantic-settings
+httpx
+cryptography
+langchain-core
+langchain-google-genai
+langgraph
+google-api-python-client
+google-auth
+python-dotenv
+pytz

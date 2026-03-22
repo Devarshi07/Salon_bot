@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: salon-whatsapp-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: WHATSAPP_VERIFY_TOKEN
+        sync: false
+      - key: ENCRYPTION_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GOOGLE_SERVICE_ACCOUNT_JSON
+        sync: false
+      - key: ADMIN_API_KEY
+        sync: false
+      - key: APP_ENV
+        value: production
+      - key: LOG_LEVEL
+        value: INFO

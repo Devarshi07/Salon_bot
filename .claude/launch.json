@@ -1,0 +1,18 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "FastAPI Backend",
+      "runtimeExecutable": "uvicorn",
+      "runtimeArgs": ["app.main:app", "--reload", "--port", "8001"],
+      "port": 8001
+    },
+    {
+      "name": "Admin Dashboard",
+      "cwd": "/Users/devarshimahajan/Projects/Whatsapp chatbot/frontend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--", "--port", "5173"],
+      "port": 5173
+    }
+  ]
+}
